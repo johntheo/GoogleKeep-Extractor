@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                if (window.File && window.FileReader && window.FileList && window.Blob) {
+                    console.log('Your browser supports the FIle API');
+                } else {
+                    alert('The File APIs are not fully supported in this browser.');
+                }
+            })
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- reference: https://www.html5rocks.com/pt/tutorials/file/dndfiles/ -->
+        <!--<div id="drop_zone">Drop files here</div>-->
+        <input type="file" id="files" name="files[]" multiple />
+
+        <output id="list"></output>
+
+
+        <script src="js/fileload.js"></script>
+    </body>
+</html>
