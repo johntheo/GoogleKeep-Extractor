@@ -1,11 +1,3 @@
-script:
-  - rake
-
-# whitelist
-branches:
-  only:
-    - master
-    
 deploy:
   provider: pages
   skip-cleanup: true
