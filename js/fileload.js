@@ -45,6 +45,8 @@ function handleFileSelect(evt) {
                     
                     if(processedCount == totalFiles){
                         console.log('OK');
+                        //Create a zip of files
+                        //https://davidwalsh.name/javascript-zip
                         document.getElementById('fileDisplayArea').innerHTML = '<ul>' + output.join('') + '</ul>';
                     }
                     
